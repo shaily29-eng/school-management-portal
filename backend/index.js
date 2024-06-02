@@ -10,6 +10,8 @@ const PORT = process.env.PORT || 5000
 
 dotenv.config();
 
+console.log('MONGO_URL:', process.env.MONGO_URL); 
+
 // app.use(bodyParser.json({ limit: '10mb', extended: true }))
 // app.use(bodyParser.urlencoded({ limit: '10mb', extended: true }))
 
