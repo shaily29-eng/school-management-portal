@@ -43,13 +43,13 @@ const StudentAttendance = ({ situation }) => {
             dispatch(getUserDetails(studentID, "Student"));
             setChosenSubName(subjectID);
         }
-    }, [situation,dispatch,params]);
+    }, [situation]);
 
     useEffect(() => {
         if (userDetails && userDetails.sclassName && situation === "Student") {
             dispatch(getSubjectList(userDetails.sclassName._id, "ClassSubjects"));
         }
-    }, [dispatch,situation, userDetails]);
+    }, [dispatch, userDetails]);
 
     const changeHandler = (event) => {
         const selectedSubject = subjectsList.find(

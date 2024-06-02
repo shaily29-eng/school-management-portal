@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux';
 import { Box, Table, TableBody, TableContainer, TableHead, Typography, Paper } from '@mui/material'
@@ -30,7 +31,7 @@ const ChooseSubject = ({ situation }) => {
             setTeacherID(teacherID);
             dispatch(getTeacherFreeClassSubjects(classID));
         }
-    }, [situation,params,dispatch]);
+    }, [situation]);
 
     if (loading) {
         return <div>Loading...</div>;
