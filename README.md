@@ -27,4 +27,9 @@ The School Management System is a web-based application built using the MERN (Mo
 - Backend: Node.js, Express.js
 - Database: MongoDB
 
+## Deployment
+
+- Frontend: Netlify
+- Backend: Render
+
 
