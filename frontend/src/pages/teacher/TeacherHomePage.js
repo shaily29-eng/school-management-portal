@@ -3,9 +3,9 @@ import SeeNotice from '../../components/SeeNotice';
 import CountUp from 'react-countup';
 import styled from 'styled-components';
 import Students from "../../assets/img1.png";
-import Lessons from "../../assets/subjects.svg";
-import Tests from "../../assets/assignment.svg";
-import Time from "../../assets/time.svg";
+// import Lessons from "../../assets/subjects.svg";
+// import Tests from "../../assets/assignment.svg";
+// import Time from "../../assets/time.svg";
 import { getClassStudents, getSubjectDetails } from '../../redux/sclassRelated/sclassHandle';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
@@ -14,7 +14,7 @@ const TeacherHomePage = () => {
     const dispatch = useDispatch();
 
     const { currentUser } = useSelector((state) => state.user);
-    const { subjectDetails, sclassStudents } = useSelector((state) => state.sclass);
+    const { sclassStudents } = useSelector((state) => state.sclass);
 
     const classID = currentUser.teachSclass?._id
     const subjectID = currentUser.teachSubject?._id
@@ -25,7 +25,7 @@ const TeacherHomePage = () => {
     }, [dispatch, subjectID, classID]);
 
     const numberOfStudents = sclassStudents && sclassStudents.length;
-    const numberOfSessions = subjectDetails && subjectDetails.sessions
+    // const numberOfSessions = subjectDetails && subjectDetails.sessions
 
     return (
         <>

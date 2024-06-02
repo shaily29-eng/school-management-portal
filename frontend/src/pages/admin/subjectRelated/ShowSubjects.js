@@ -28,7 +28,7 @@ const ShowSubjects = () => {
     }
 
     const [showPopup, setShowPopup] = useState(false);
-    const [message, setMessage] = useState("");
+    const [message] = useState("");
 
     const deleteHandler = (deleteID, address) => {
         // console.log(deleteID);

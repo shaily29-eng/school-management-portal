@@ -40,7 +40,7 @@ const ShowStudents = () => {
     }
 
     const [showPopup, setShowPopup] = React.useState(false);
-    const [message, setMessage] = React.useState("");
+    const [message] = React.useState("");
 
     const deleteHandler = (deleteID, address) => {
         // console.log(deleteID);
