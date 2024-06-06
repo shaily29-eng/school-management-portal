@@ -3,7 +3,7 @@
 </h1>
 
 
-# About
+## About
 
 The School Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline school management, class organization, and facilitate communication between students, teachers, and administrators.
 
@@ -27,9 +27,38 @@ The School Management System is a web-based application built using the MERN (Mo
 - Backend: Node.js, Express.js
 - Database: MongoDB
 
+## Running in Docker
+
+- React Frontend:
+  ```shell
+  docker build -t frontend .
+  docker run -p 80:80 frontend
+  ```
+  - Your React frontend should now be running at `http://localhost:80/`
+    
+- Node Frontend:
+  ```shell
+  docker build -t backend .
+  docker run -p 5000:5000 backend
+  ```
+  - Your React frontend should now be running at `http://localhost:5000/`
+
+## Running Unit Tests (Jest)
+
+- Frontend:
+  ```shell
+  npm test
+  ```
+- Backend:
+  ```shell
+  jest
+  ```
+
+
 ## Deployment
 
 - Frontend: Netlify
 - Backend: Render
+
 
 
