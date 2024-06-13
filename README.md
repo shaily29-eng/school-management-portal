@@ -4,7 +4,11 @@
 
 ## About
 
-The School Management System is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline school management, class organization, and facilitate communication between students, teachers, and administrators.
+The STUDENT TEACHER WEB APP is a web-based application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to streamline school management, class organization, and facilitate communication between students, teachers, and administrators.
+
+## Architecture Diagram
+
+<img src="https://github.com/shaily29-eng/student-teacher-webApp/assets/59019087/560053c7-914f-46a0-b438-447290b154e1" alt="unnamed" width="1000" height="300">
 
 ## Features
 
