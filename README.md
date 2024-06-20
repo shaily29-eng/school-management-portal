@@ -38,7 +38,7 @@ The STUDENT TEACHER WEB APP is a web-based application built using the MERN (Mon
   docker run -p 80:80 frontend
   ```
   - Your React frontend should now be running at `http://localhost:80/`
-- Node Frontend:
+- Node Backend:
   ```shell
   docker build -t backend .
   docker run -p 5000:5000 backend
